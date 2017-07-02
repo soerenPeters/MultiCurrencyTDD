@@ -6,7 +6,8 @@
 #define MONEYEXAMPLETDD_MONEY_H
 
 class Money {
-
+protected:
+    int amount;
 };
 
 #endif //MONEYEXAMPLETDD_MONEY_H

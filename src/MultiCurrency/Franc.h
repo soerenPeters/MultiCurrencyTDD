@@ -27,8 +27,6 @@ public:
         return amount == d.amount;
     }
 
-private:
-    int amount;
 };
 
 
