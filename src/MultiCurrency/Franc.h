@@ -19,13 +19,10 @@ public:
         return Franc(d.amount + amount);
     }
 
-    Franc times(int multiplicator) {
-        return Franc(amount  * multiplicator);
+    Franc times(int value) {
+        return Franc(amount  * value);
     }
 
-    bool operator==(const Franc d) {
-        return amount == d.amount;
-    }
 
 };
 

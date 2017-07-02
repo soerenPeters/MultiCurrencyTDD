@@ -3,12 +3,11 @@
 
 #include "Money.h"
 
-class Dollar : public Money{
+class Dollar : public Money {
 public:
-    Dollar(int amount) {
+    Dollar(int amount)  {
         this->amount = amount;
     }
-
 
     Dollar plus(Dollar d) {
         return Dollar(d.amount + amount);
@@ -18,9 +17,6 @@ public:
         return Dollar(amount  * multiplicator);
     }
 
-    bool operator==(const Dollar d) {
-        return amount == d.amount;
-    }
 
 };
 

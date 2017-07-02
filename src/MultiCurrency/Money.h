@@ -8,6 +8,11 @@
 class Money {
 protected:
     int amount;
+
+public:
+    bool operator==(const Money &d) {
+        return amount == d.amount;
+    }
 };
 
 #endif //MONEYEXAMPLETDD_MONEY_H
