@@ -18,3 +18,11 @@ TEST(DollarTest, addTwoDollars)
     ASSERT_THAT(d1.plus(d2).amount, Eq(10));
 }
 
+TEST(DollarTest, mulitplyDollars)
+{
+    Dollar d(5);
+    Dollar newDollar = d.times(2);
+
+    ASSERT_THAT(newDollar.amount, 10);
+
+}

@@ -13,6 +13,10 @@ public:
         return Dollar(d.amount + amount);
     }
 
+    Dollar times(int multiplicator) {
+        return Dollar(amount  * multiplicator);
+    }
+
     int amount;
 };
 
