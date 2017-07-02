@@ -10,10 +10,10 @@
 
 class Franc : public Money{
 public:
-    Franc(int amount) {
+    Franc(int amount)  {
         this->amount = amount;
+        this->currency = "CHF";
     }
-
 
     Franc plus(Franc d) {
         return Franc(d.amount + amount);

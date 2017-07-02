@@ -7,6 +7,7 @@ class Dollar : public Money {
 public:
     Dollar(int amount)  {
         this->amount = amount;
+        this->currency = "USD";
     }
 
     Dollar plus(Dollar d) {
