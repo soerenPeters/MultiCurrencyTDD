@@ -5,24 +5,12 @@
 using namespace testing;
 
 
-TEST(DollarTest, createDollarWithAmount)
-{
-    ASSERT_THAT(Dollar(5).amount, Eq(5));
-}
-
 TEST(DollarTest, addTwoDollars)
 {
-    Dollar d1(5);
-    Dollar d2(5);
-
-    ASSERT_THAT(d1.plus(d2).amount, Eq(10));
+    ASSERT_TRUE(Dollar(5).plus(Dollar(5)) == Dollar(10));
 }
 
 TEST(DollarTest, mulitplyDollars)
 {
-    Dollar d(5);
-    Dollar newDollar = d.times(2);
-
-    ASSERT_THAT(newDollar.amount, 10);
-
+    ASSERT_TRUE(Dollar(5).times(2) == Dollar(10));
 }

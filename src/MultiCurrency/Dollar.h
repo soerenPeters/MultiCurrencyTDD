@@ -17,6 +17,11 @@ public:
         return Dollar(amount  * multiplicator);
     }
 
+    bool operator==(const Dollar d) {
+        return amount == d.amount;
+    }
+
+private:
     int amount;
 };
 
