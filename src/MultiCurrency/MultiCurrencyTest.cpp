@@ -1,6 +1,7 @@
 #include "gmock/gmock.h"
 
 #include "Dollar.h"
+#include "Franc.h"
 
 using namespace testing;
 
@@ -13,4 +14,9 @@ TEST(DollarTest, addTwoDollars)
 TEST(DollarTest, mulitplyDollars)
 {
     ASSERT_TRUE(Dollar(5).times(2) == Dollar(10));
+}
+
+TEST(FrancTest, multiplyFrancs)
+{
+    ASSERT_TRUE(Franc(5).times(2) == Franc(10));
 }
