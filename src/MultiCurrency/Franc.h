@@ -5,10 +5,10 @@
 #ifndef MONEYEXAMPLETDD_FRANC_H
 #define MONEYEXAMPLETDD_FRANC_H
 
+#include "Money.h"
 
 
-
-class Franc {
+class Franc : public Money{
 public:
     Franc(int amount) {
         this->amount = amount;

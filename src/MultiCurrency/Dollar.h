@@ -1,8 +1,9 @@
 #ifndef MONEYEXAMPLETDD_DOLLAR_H
 #define MONEYEXAMPLETDD_DOLLAR_H
 
+#include "Money.h"
 
-class Dollar {
+class Dollar : public Money{
 public:
     Dollar(int amount) {
         this->amount = amount;
