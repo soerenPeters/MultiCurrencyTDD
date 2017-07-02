@@ -16,6 +16,11 @@ TEST(DollarTest, mulitplyDollars)
     ASSERT_TRUE(Dollar(5).times(2) == Dollar(10));
 }
 
+TEST(DollarTest, addTwoFrancs)
+{
+    ASSERT_TRUE(Franc(5).plus(Franc(5)) == Franc(10));
+}
+
 TEST(FrancTest, multiplyFrancs)
 {
     ASSERT_TRUE(Franc(5).times(2) == Franc(10));
